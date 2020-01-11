@@ -14,6 +14,7 @@ class _MyAppState extends State<MyApp> {
       _isSelected = !_isSelected;
     });
   }
+ 
 
   Widget radioButton(bool isSelected) => Container(
         width: 16.0,
@@ -57,7 +58,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(top: 20.0),
-                child: Image.asset("assets/image_01.png"),
+                child: Image.asset("assets/image_03.png"),
               ),
               Expanded(
                 child: Container(),
@@ -77,6 +78,8 @@ class _MyAppState extends State<MyApp> {
                         width: ScreenUtil.getInstance().setWidth(110),
                         height: ScreenUtil.getInstance().setHeight(110),
                       ),
+                      //TODO
+                      //Implement the Logo to be directly ontop of the Form and at the center
                       Text("LOGO",
                           style: TextStyle(
                               fontFamily: "Poppins-Bold",
