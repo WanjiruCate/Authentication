@@ -17,8 +17,9 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  firebase_auth
-  google_sign_in
+  firebase_auth:
+  google_sign_in:
+
   flutter:
     sdk: flutter
 
@@ -70,12 +71,12 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
-  fonts:
-      - family: QuickSand
+fonts:
+      - family: Quicksand
         fonts:
-        - asset/QuickSand-Medium.ttf
-        - assets/QuickSand-Bold.ttf
-          weight: 700
+          - asset: assets/Quicksand-Medium.ttf
+          - asset: assets/Quicksand-Bold.ttf
+            weight: 700
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
