@@ -47,6 +47,17 @@ class _MyAppState extends State<MyApp> {
     ScreenUtil.instance = ScreenUtil.getInstance()..init(context);
     ScreenUtil.instance =
         ScreenUtil(width: 750, height: 1334, allowFontScaling: true);
+    var inkWell = InkWell(
+                              onTap: () {},
+                              child: Center(
+                                child: Text("SIGNIN",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Poppins-Bold",
+                                        fontSize: 18,
+                                        letterSpacing: 1.0)),
+                              ),
+                            );
     return new Scaffold(
       backgroundColor: Colors.white,
       resizeToAvoidBottomPadding: true,
@@ -80,7 +91,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       //TODO
                       //Implement the Logo to be directly ontop of the Form and at the center
-                      Text("LOGO",
+                      Text("",
                           style: TextStyle(
                               fontFamily: "Poppins-Bold",
                               fontSize: ScreenUtil.getInstance().setSp(46),
@@ -131,17 +142,7 @@ class _MyAppState extends State<MyApp> {
                               ]),
                           child: Material(
                             color: Colors.transparent,
-                            child: InkWell(
-                              onTap: () {},
-                              child: Center(
-                                child: Text("SIGNIN",
-                                    style: TextStyle(
-                                        color: Colors.white,
-                                        fontFamily: "Poppins-Bold",
-                                        fontSize: 18,
-                                        letterSpacing: 1.0)),
-                              ),
-                            ),
+                            child: inkWell,
                           ),
                         ),
                       )
